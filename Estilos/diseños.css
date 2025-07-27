@@ -1,0 +1,111 @@
+body{
+    margin: 0px;
+}
+
+#titulo1{
+    padding: 1px;
+    background-color: rgb(42,112,112);
+    
+} 
+
+#titulo h1{
+    text-align: center; /*Centrar el texto*/
+}
+
+ul{ 
+    list-style-type: none;/*Eliminar viñetas*/
+    margin: 0; /*Eliminar margen*/
+    padding: 0; /*Eliminar padding*/
+    overflow: hidden; /*Cortar el contenido si no cabe*/
+    display: flex; /*Contenedor flexible*/
+} 
+
+li a, .btndesplegable{
+    display: inline-block; /*Desplegar elemento en forma de bloque*/
+    color: rgb(0,1,2); /*Aplicar color a la fuente*/
+    text-align: center; /*Centrar el texto*/
+    padding: 10px 16px; /*Aplicar padding*/
+    text-decoration: none; /*Desactivar la decoración*/
+} 
+
+li a:hover, .f-desplegable:hover .btndesplegable{
+    background-color: rgb(19, 127, 141);
+    color: white;
+} 
+
+.cont-desplegable{
+    display: none; /*Ocultar contenedor */
+    position: absolute; /*Aplicar posición absoluta*/
+    background-color: #f5f7f8; /*Aplicar color de fondo */
+    min-width: 200px; /*Aplicar ancho mínimo de 200px*/
+
+    box-shadow: 0px 8px 16px 0px rgba (36,225,231,0.856); /*Aplicar sombra*/
+    z-index: 1; /*Ubicarlo sobre los otros contenedores*/
+}
+
+.f-desplegable:hover .cont-desplegable{
+    display: block; /*Mostrar el contenedor*/
+}
+
+.cont-desplegable a{
+    color: black; /*Aplicar color negro al texto*/
+    padding: 12px 16px; /*Agregar relleno*/
+    text-decoration: none; /*Eliminar las caracteristicas del texto*/
+    display: block; /*Convertir formato bloque el elemento*/
+    text-align: left; /*Alinear el texto a la izquierda*/
+}
+
+.cont-desplegable a:hover{
+    background-color:#d8d6d6; /*Coloe del fondo*/
+    color:rgb(3,47,68); /*Color del texto*/
+} 
+
+.seccion-form{
+    width: 100%; /*Ancho del elemeto*/
+    display: flex; /*Hacer  elemento flexible*/
+    flex-flow: row wrap;
+    justify-content: center; /*Cerntar contenido*/
+    padding: 0px 0px 10px 0px;
+}
+
+.s-encabezado{
+    width: 700px;
+    background-image:linear-gradient(#3b1804, #0c504a) ;
+    text-align: center;
+    padding: 0 20px;
+}
+form{
+    width:700px;/*ancho del formulario*/
+    padding: 20px;/*relleno del formulario*/
+    line-height: 30px;/*interlineado*/
+}
+#codnom,#cospor,#prefecha{
+    display:flex;
+    flex-wrap: wrap;
+}
+.codnom1{
+    flex: auto;
+}
+.campof{
+    padding: 6px 20px ;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=submit]{
+          background-color: #05588f;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 8px;
+}
+input[type=submit]:hover{
+            background-color: #087179;
+
+}
+footer{
+    margin: auto;
+    height: 50px;
+    padding: 5px;
+}
